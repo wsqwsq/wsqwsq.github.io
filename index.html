@@ -1,499 +1,275 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style id="stndz-style"></style>
-    <meta name="viewport" content="width=800">
-    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shuaiqi Wang — ECE @ CMU</title>
+  <meta name="description" content="Shuaiqi Wang — Ph.D. candidate in Electrical & Computer Engineering at Carnegie Mellon University. Research: ML theory, privacy, security, LLMs, federated learning." />
+  <link rel="icon" href="./source/Pied_Piper.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Conservative academic layout with left profile sidebar */
+    :root{ --bg:#ffffff; --fg:#0f172a; --muted:#475569; --link:#0b5ed7; --border:#e5e7eb; --maxw: 1040px; --lh:1.65; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0b0f1a; --fg:#e5e7eb; --muted:#9aa4b2; --link:#73a7ff; --border:#1f2937; }}
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{ margin:0; background:var(--bg); color:var(--fg); font: 16px/var(--lh) Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
 
-    <style type="text/css">
-      a {
-      color: #1772d0;
-      text-decoration:none;
-      }
-      a:focus, a:hover {
-      color: #f09228;
-      text-decoration:none;
-      }
-      body,td,th,tr,p,a {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 16px
-      }
-      strong {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      }
-      heading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 24px;
-      }
-      name {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 32px;
-      }
-      span.highlight {
-          background-color: #ffffd0;
-      }
-    </style>
+    .wrap{ width:min(var(--maxw), 100%); margin:0 auto; padding: 20px 20px 56px; }
+    header{ border-bottom:1px solid var(--border); margin-bottom:20px; }
+    .topbar{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 0; }
+    .brand{ font-weight:700; letter-spacing:.2px; }
+    nav{ display:flex; flex-wrap:wrap; gap:12px; font-size:15px; }
+    nav a{ padding:6px 8px; border-radius:6px; }
 
-    <link rel="shortcut icon" href="./source/Pied_Piper.jpg"> 
-    <title>Shuaiqi Wang's Homepage</title>
-    <link href="./source/css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-      <tbody><tr>
-      <td>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="35%">
-            <img src="./source/wsq1.jpg" width="75%">
-          </td>
-          <td width="65%" valign="middle">
-            <p align="center"><name>Shuaiqi Wang</name></p>
-            <p>Hi, my name is Shuaiqi Wang. 
-              I am now a fifth year Ph.D. student in the <a href="https://www.ece.cmu.edu/">Electrical and Computer Engineering Department</a> 
-              at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>. 
-              I am fortunate to be advised by <a href="https://www.andrew.cmu.edu/user/gfanti/">Giulia Fanti</a>.
+    /* Two-column body */
+    .layout{ display:grid; grid-template-columns: 280px 1fr; gap:28px; align-items:start; }
+    @media (max-width: 860px){ .layout{ grid-template-columns: 1fr; } }
 
-			</p>
-            <p align="center">[<a href="./source/CV.pdf">CV</a>]</p>
-            <!--<p>I have joined the Intelligent Internet of Things (<a href="http://iiot.sjtu.edu.cn/index.html">IIOT</a>) Research Center since 2017, advised by Prof. <a href="http://www.cs.sjtu.edu.cn/~fu-ly/index.html">Luoyi Fu</a> and <a href="http://www.cs.sjtu.edu.cn/~wang-xb/" target="_blank">Xinbing Wang.</p>
-            -->
-              <!--<p align="center">
-              <a href="./source/cv.pdf"><font size="4">CV</font></a>-->
-              <!--<a href="blog/index.html">Blogs</a> &nbsp;/&nbsp;
-              <a href="https://github.com/Ohyoukillkenny">GitHub</a> &nbsp;/&nbsp;
-              <a href="https://www.linkedin.com/in/lingkun-kong-303295117/">LinkedIn</a>-->
-            <!--</p>-->
-          </td>
-          
-        </tr>
-        </tbody></table>
-        <!-- Adress -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>Find Me</heading>
-            <p>
-              <table>
-              <tbody>
-                <tr>
-                  <td style="vertical-align: top;"><b>Email</b></td>
-                  <td style="padding-left: 50px;">
-                    shuaiqiw at andrew.cmu.edu
-                    <br>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="vertical-align: top;"><b>Address</b></td>
-                  <td style="padding-left: 50px;">
-                    CIC 2225F,
-                    4720 Forbes Avenue,
-                    Pittsburgh, PA 15213, USA.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            </p>
-          </td>
-        </tr>
-        </tbody></table>
+    /* Sidebar profile */
+    .profile{ position:sticky; top:16px; }
+    .avatar{ width: 160px; height:160px; border-radius:0; object-fit:cover; display:block; border:4px solid #fff; box-shadow:0 0 0 1px var(--border); }
+    .name{ font-size:22px; font-weight:700; margin:14px 0 6px; }
+    .affil{ color:var(--muted); margin:0 0 14px; }
+    .iconlist{ list-style:none; padding:0; margin:10px 0 0; display:grid; gap:12px; font-size:15px; }
+    .iconitem{ display:flex; align-items:center; gap:10px; }
+    .icon{ width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; }
+
+    /* Main content */
+    h2{ font-size:20px; margin:24px 0 10px; line-height:1.35; }
+    h3{ font-size:17px; margin:0 0 4px; line-height:1.35; }
+    .section{ padding-top:8px; }
+    .sep{ height:1px; background:var(--border); margin:14px 0; }
+    ul.clean{ list-style:none; padding-left:0; margin:0; }
+    ul.clean li{ padding:12px 0; border-bottom:1px solid var(--border); }
+    ul.clean li:last-child{ border-bottom:none; }
+    .pub-authors{ color:var(--muted); }
+
+    .job{ padding:10px 0; }
+    .job h3{ margin:0; }
+    .job .where{ font-weight:600; }
+    .job .meta{ color:var(--muted); font-size:15px; margin:2px 0 6px; }
+    .job ul{ margin:6px 0 0 18px; }
+
+    footer{ margin-top:28px; padding-top:14px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; }
+  
+/* --- Edits per request --- */
+/* Make portrait height:width = 1.2:1 (taller than wide) */
+.avatar{
+  width: 160px;
+  height: auto;
+  aspect-ratio: 1 / 1.2; /* width / height */
+  object-fit: cover;
+}
+
+/* Author color: force "Shuaiqi Wang" (wrapped in <strong><em>) to pure black */
+.pub-authors strong,
+.pub-authors strong em{
+  color:#000 !important;
+}
+/* Keep links normal color on that line */
+.pub-authors a{ color: var(--link); }
 
 
-        <!-- Research -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tbody><tr>
-            <td width="100%" valign="middle">
-              <heading>Research Interests</heading>
-              <p>
-                I am interested in the theoretical foundations of machine learning (especially generative models), 
-                and the applications in privacy, security, large language models, data sharing, and federated learning.
-              <!--
-              :</p>
-              <ul>
-              <li>Wireless Networks</li>
-              <li>Social Networks</li>
-              </ul>
-              <p>More broadly, I am interested in all research topics concerned with fundamental and theoretical problems in computer science, including network science, machine learning theory, computing theory and so on.
-              -->
-              </p>
-            </td>
-          </tr>
-          </tbody></table>
+/* --- Update: underline author name instead of pure black --- */
+.pub-authors strong,
+.pub-authors strong em{
+  text-decoration: underline !important;
+  color: inherit !important;
+}
 
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="topbar">
+        <div class="brand">Shuaiqi Wang</div>
+        <nav aria-label="Sections">
+          <a href="#publications">Publications</a>
+          <a href="./source/CV.pdf" target="_blank" rel="noopener">CV</a>
+        </nav>
+      </div>
+    </header>
 
+    <div class="layout">
+      <!-- Left sidebar (profile) -->
+      <aside class="profile" aria-label="Profile">
+        <img class="avatar" src="./source/wsq1.jpg" alt="Portrait of Shuaiqi Wang" />
+        <div class="name">Shuaiqi Wang</div>
+        <p class="affil">Department of Electrical and Computer Engineering, CMU</p>
+        <ul class="iconlist">
+          <li class="iconitem">
+            <!-- Location (black) -->
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#111" d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7Zm0 10.25A3.25 3.25 0 1 1 12 5.5a3.25 3.25 0 0 1 0 6.5Z"/></svg>
+            <span><strong>Office:</strong> 2225F CIC</span>
+          </li>
+          <li class="iconitem">
+            <!-- Email (envelope) -->
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4b5563" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg>
+            <a href="mailto:shuaiqiw@andrew.cmu.edu">Email</a>
+          </li>
+          <li class="iconitem">
+            <!-- Github (black mark) -->
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#111" d="M12 .5C5.648.5.5 5.648.5 12c0 5.088 3.292 9.395 7.868 10.916.575.106.785-.25.785-.556 0-.275-.01-1.005-.016-1.974-3.2.695-3.876-1.542-3.876-1.542-.523-1.33-1.279-1.684-1.279-1.684-1.045-.715.08-.7.08-.7 1.154.081 1.762 1.186 1.762 1.186 1.028 1.762 2.698 1.253 3.356.958.104-.745.402-1.253.73-1.542-2.555-.29-5.243-1.278-5.243-5.686 0-1.255.45-2.28 1.186-3.084-.119-.29-.514-1.456.112-3.035 0 0 .965-.309 3.166 1.178a10.95 10.95 0 0 1 2.884-.389c.98.004 1.966.133 2.884.389 2.2-1.487 3.163-1.178 3.163-1.178.63 1.579.235 2.745.116 3.035.74.804 1.186 1.83 1.186 3.084 0 4.42-2.694 5.392-5.255 5.676.41.353.78 1.047.78 2.112 0 1.525-.014 2.754-.014 3.13 0 .309.206.667.79.553C20.215 21.39 23.5 17.088 23.5 12 23.5 5.648 18.352.5 12 .5Z"/></svg>
+            <a href="https://github.com/wsqwsq" target="_blank" rel="noopener">Github</a>
+          </li>
+          <li class="iconitem">
+            <!-- Google Scholar (graduation cap) -->
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#111" d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 13L5 12.18V14l7 4 7-4v-1.82L12 16Z"/></svg>
+            <a href="https://scholar.google.com/citations?user=yy2OXxEAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+          </li>
+        </ul>
+      </aside>
 
-        <!-- Education -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>Education</heading>
-            <!--<p>
-              <strong>Rice University</strong>, USA, from Aug. 2018 until now.<br>
-              Department of Computer Science
-            </p>-->
-            <p>
-              <font size="2">Ph.D. at Carnegie Mellon University, 2021 - present</font><br>
-              Electrical and Computer Engineering Department
-            </p>
-            <p>
-              <font size="2">B.S. at Shanghai Jiao Tong University, 2016 - 2020</font><br>
-              Department of Computer Science & Zhiyuan College
-              <!--Major GAP: 92.1/100 (3.93/4.0)-->
-            </p>
-            <!--<p>
-              <strong>Cornell University</strong>, USA, from Jun. 2017 to Aug. 2017<br>
-              Visiting Student, Computer Science Department     
-            </p>-->
-          </td>
-        </tr>
-        </tbody></table>
+      <!-- Right main column -->
+      <main>
+        <!-- Introduction & Interests BEFORE Education -->
+        <section id="intro" class="section">
+          <p>I am a fifth-year Ph.D. candidate in ECE at <a href="https://www.cmu.edu/" target="_blank" rel="noopener">Carnegie Mellon University</a>, advised by <a href="https://www.andrew.cmu.edu/user/gfanti/" target="_blank" rel="noopener">Giulia Fanti</a>. I work on the theoretical foundations of machine learning and its applications to privacy, security, large language models, data synthesis, and federated learning.</p>
+          <h2>Research Interests</h2>
+          <p>ML Privacy &amp; Security · Large Language Model on Structured Data · Generative Models · Data Synthesis &amp; Sharing · Federated Learning</p>
+        </section>
 
-        <!-- Education -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tbody><tr>
-            <td width="100%" valign="middle">
-              <heading>Industrial Experiences</heading>
-              <!--<p>
-                <strong>Rice University</strong>, USA, from Aug. 2018 until now.<br>
-                Department of Computer Science
-              </p>-->
-              <p>
-                <font size="2"><i>Microsoft</i>, Research Intern, Sep. 2024 - Dec. 2024</font><br>
-                Topic: differentially private data synthesis for structured datasets based on large language models<br>
-                Host: Zinan Lin, Pei Zhou
-              </p>
-              <p>
-                <font size="2"><i>Amazon</i>, Research Intern, Jun. 2024 - Aug. 2024</font><br>
-                Topic: adversarial attack on vision language models<br>
-                Host: Alireza Mehrtash
-                <!--Major GAP: 92.1/100 (3.93/4.0)-->
-              </p>
-              <p>
-                <font size="2"><i>JPMorgan Chase</i>, AI Research Intern, Jun. 2023 - Aug. 2023</font><br>
-                Topic: privacy protection across multiple summary statistical properties<br>
-                Host: Mohsen Ghassemi
-                <!--Major GAP: 92.1/100 (3.93/4.0)-->
-              </p>
-            </td>
-          </tr>
-          </tbody></table>
+        <div class="sep" aria-hidden="true"></div>
 
-        <!-- Publication -->
-        <!--
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>Publication</heading>
-            <p>
-            Junqin Huang, <strong>Lingkun Kong</strong>, Linghe Kong, Zhen Liu, Zhiqiang Liu and Guihai Chen. "Blockchain-based Crowd-sensing System". IEEE HotICN International Conference, 2018. [<a href="https://hoticn.com/files/hoticnPapers/040-paper%20110.pdf">PDF</a>]
-            </p>
-            <p>
-              L. Fu, S. Ma, <strong>L. Kong</strong>, S. Shi, X. Wang, "FINE: A Framework for Distributed Learning on Incomplete Observations for Heterogeneous Crowdsensing Networks", in IEEE/ACM Transactions on Networking, Vo. 26, No. 3, pp. 1092-1109, June 2018. [<a href="https://doi.org/10.1109/TNET.2018.2814779">PDF</a>]
-            </p>
-          </td>
-        </tr>
-        </tbody></table>
-    	-->
+        <!-- Education first -->
+        <section id="education" class="section">
+          <h2>Education</h2>
+          <ul class="clean">
+            <li><strong>Carnegie Mellon University</strong> — Ph.D., Electrical &amp; Computer Engineering (2021 – present). Advisor: <a href="https://www.andrew.cmu.edu/user/gfanti/" target="_blank" rel="noopener">Giulia Fanti</a>.</li>
+            <li><strong>Shanghai Jiao Tong University</strong> — B.S., Computer Science &amp; Zhiyuan Honors Program (2016 – 2020)</li>
+          </ul>
+        </section>
 
-    	<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>Publications and Manuscripts</heading>
-            <p>
-              <strong>Shuaiqi Wang</strong>, Shuran Zheng, Zinan Lin, Giulia Fanti and Zhiwei Steven Wu. 
-              "<a href="https://arxiv.org/pdf/2410.17095">Inferentially-Private Private Information</a>".
-              <strong>WWW 2025</strong>.
-            </p>
-            <p>
-              <strong>Shuaiqi Wang</strong>, Sayali Deshpande, Rajesh Kudupudi, Alireza Mehrtash and Danial Sabri Dashti.
-              "MASAN: Enhancing Attack Stealth and Efficacy on Vision-Language Models via Smart Noise".
-              <strong>ICLR 2025 BuildingTrust</strong>.
-            </p>
-            <p>
-              <strong>Shuaiqi Wang</strong>, Zinan Lin and Giulia Fanti. 
-              "<a href="https://arxiv.org/pdf/2411.18531">Statistic Maximal Leakage</a>".
-              <strong>ISIT 2024</strong>.
-            </p>
-            <p>
-              <strong>Shuaiqi Wang</strong>, Rongzhe Wei, Mohsen Ghassemi, Eleonora Kreacic and Vamsi K. Potluru. 
-              "<a href="https://arxiv.org/pdf/2405.13804">Guarding Multiple Secrets: Enhanced Summary Statistic Privacy for Data Sharing</a>".
-              <strong>ICLR 2024 PML Workshop</strong>.
-            </p>
-            <p>
-              Xinyi Xu, <strong>Shuaiqi Wang</strong>, Chuan-Sheng Foo, Bryan Kian Hsiang Low and Giulia Fanti. 
-              "<a href="https://arxiv.org/pdf/2410.04386">Data Distribution Valuation</a>".
-              <strong>NeurIPS 2024</strong>.
-            </p>
-            <p>
-              Ronghao Ni, Zinan Lin, <strong>Shuaiqi Wang</strong> and Giulia Fanti. 
-              "<a href="https://arxiv.org/pdf/2312.06786">Mixture-of-Linear-Experts for Long-term Time Series Forecasting</a>".
-              <strong>AISTATS 2024</strong>.
-            </p>
-            <p>
-              Zinan Lin*, <strong>Shuaiqi Wang</strong>*, Vyas Sekar, and Giulia Fanti. 
-              "<a href="https://arxiv.org/pdf/2303.02014">Summary Statistic Privacy in Data Sharing</a>".
-              <strong>IEEE Journal on Selected Areas in Information Theory, NeurIPS 2022 SyntheticData4ML</strong>.<br>
-              * Equal contribution.
-            </p>
-            <p>
-                <strong>Shuaiqi Wang</strong>, Jonathan Hayase, Giulia Fanti and Sewoong Oh. 
-                "<a href="https://arxiv.org/abs/2205.11736">Towards a Defense against Backdoor Attacks in Continual Federated Learning</a>". 
-                [<a href="https://github.com/wsqwsq/Towards-a-Defense-against-Backdoor-Attacks-in-Continual-Federated-Learning">code</a>]
-                <strong>Transactions on Machine Learning Research</strong>.
-            </p>
-            <!--<p>
-              <strong>Shuaiqi Wang</strong> and Giulia Fanti. "Group Testing with Inexact Reconstruction".
-            </p>-->
-            <p>
-              <strong>Shuaiqi Wang</strong>, Shuhao Li, Luoyi Fu and Xiaojun Lin. 
-              "<a href="./source/Efficient Distributed Steiner Tree Construction in Wireless Sensor Networks with Unreliable Links.pdf">Efficient Distributed Steiner Tree Construction in Wireless Sensor Networks with Unreliable Links</a>".
-            </p>
-            <p>
-              Benjie Miao, <strong>Shuaiqi Wang</strong>, Luoyi Fu and Xiaojun Lin. 
-              "<a href="https://dl.acm.org/doi/pdf/10.1145/3397166.3409127">De-anonymizability of Social Network: Through the Lens of Symmetry</a>".
-              <strong>MobiHoc 2020</strong>.
-            </p>
-            <p>
-            	Luoyi Fu, Jiapeng Zhang, <strong>Shuaiqi Wang</strong>, Xinyu Wu, Xinbing Wang and Guihai Chen. 
-              "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8967164">De-anonymizing social networks with overlapping community structure</a>". 
-              <strong>IEEE/ACM Transactions on Networking</strong>.
-            </p>
-            <p>
-            	Xudong Wu, Luoyi Fu, <strong>Shuaiqi Wang</strong>, Bo Jiang, Xinbing Wang and Guihai Chen. 
-              "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9465739">Collective Influence Maximization in Mobile Social Networks</a>". 
-              <strong>IEEE Transactions on Mobile Computing</strong>.
-            </p>
-            <!--<p>
-            	<strong>S. Wang</strong>, L. Fu, S. Li, X. Wang and X. Lin, "Effcient Distributed Steiner Tree Construction in Wireless Sensor Networks with Unreliable Links". (Submitted to <strong>SIGMETRICS 2020</strong>)
-            </p>-->
-          </td>
-        </tr>
-        </tbody></table>
+        <div class="sep" aria-hidden="true"></div>
 
-        <!-- Project -->
-        <!--<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>Selected Research Experiences</heading>
-          </td>
-        </tr>
-        </tbody></table>
-
-        <table width="100%" align="center" border="0" cellpadding="20">
-        <tbody><tr>
-          <td width="25%"><img src="./source/WSN02.png" width="170" height="170"></td>
-          <td width="75%" valign="top">
-          <p>-->
-            <!--<a href="https://github.com/Ohyoukillkenny/Bancor-Simulator"><strong>A Simulator for Market Analysis Under Bancor Protocol</strong></a> -->
-            <!--<strong>Efficient Distributed Steiner Tree Construction in Wireless Sensor Networks with Unreliable Links</strong>
-            <br>
-            This work is advised by Prof. <a href="http://www.cs.sjtu.edu.cn/~fu-ly/index.html">Luoyi Fu</a>, <a href="http://www.cs.sjtu.edu.cn/~wang-xb/" target="_blank">Xinbing Wang</a> and <a href="https://engineering.purdue.edu/~linx/">Xiaojun Lin</a> (Purdue).
-            <br>
-            </p>
-
-            <p>
-            	In wireless sensor networks, multicast tree is the most common structure for the multicasting, an important data transmission pattern. Constructing the minimum multicast tree can be converted to the classical Steiner Tree Problem, which is proved to be NP-complete. Although wireless communication is notoriously unreliable in practice,  almost all previous works on constructing the multicast tree neglected this property. Motivated by this, I Analyzed the effect of unreliable links on data communication and, for the first time, designed a distributed algorithm to construct the approximate Steiner tree based on unreliable links with high time and energy efficiency.
-            </p>
-
-            <p>
-            	In this project, I accomplished all aspects and finally summarized them in a 12-page paper with a 30-page techncial report. Moreover, this research requires strong mathematical background, and the methods involved span mathematical analysis, probability theory, discrete mathematics and so on.
-            </p>-->
-
-            <!--
-            <p>
-            	We are going to submit our work to <strong>SIGMETRICS 2020</strong>.
-            </p>
-        -->
-
-            <!--This work is advised by Prof. <a href="http://www.cs.cornell.edu/people/egs/">Emin Gun Sirer</a>.
-            <br>
-              <a href="https://www.bancor.network/">Bancor</a> holds the record for the biggest crowd-funding, ever, in the history of mankind. However, the robustness and efficiency of Bancor remain to be explored. Bancor also has several flaws due to its design principle.
-            <br>
-              Therefore, we build a simulator, and leveraging which, we find that Bancor protocol is flawed in three aspects: 
+        <!-- Industry Experience second, made more readable -->
+        <section id="experience" class="section">
+          <h2>Industry Experience</h2>
+          <article class="job">
+            <h3 class="where">Microsoft — Research Intern</h3>
+            <div class="meta">Sep 2024 – Dec 2024</div>
             <ul>
-              <li>The existence of problem about <a href="https://www.bancor.network/whitepaper">"Double Coincidence of Wants"</a> Bancor wants to solve is unsubstantiated in real world. Even assuming this problem does exist, Bancor protocol cannot ensure its superiority to classic market.</li>
-              <li>The price of smart token, i.e. currency in Bancor protocol could fluctuate significantly, since Bancor neglects potential human behavior. </li>
-              <li>Bancor protocol is faced with severe cancellation of concurrent transactions under limited order.</li>
+              <li>Differentially private data synthesis for structured datasets with large language models.</li>
+              <li>Hosts: Zinan Lin, Pei Zhou.</li>
             </ul>
-            <br>
-            </p>-->
-          <!--<p></p>
-          </td>
-        </tr>
-        </tbody></table>-->
+          </article>
+          <article class="job">
+            <h3 class="where">Amazon — Research Intern</h3>
+            <div class="meta">Jun 2024 – Aug 2024</div>
+            <ul>
+              <li>Adversarial attacks on vision–language models; evaluated stealth and efficacy.</li>
+              <li>Host: Alireza Mehrtash.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <h3 class="where">JPMorgan Chase — AI Research Intern</h3>
+            <div class="meta">Jun 2023 – Aug 2023</div>
+            <ul>
+              <li>Privacy protection across multiple summary statistical properties for data sharing.</li>
+              <li>Host: Mohsen Ghassemi.</li>
+            </ul>
+          </article>
+        </section>
 
-        <!--
-        <table width="100%" align="center" border="0" cellpadding="20">
-        <tbody><tr>
-          <td width="25%"><img src="./source/TON0.png" width="170" height="118"></td>
-          <td width="75%" valign="top">
-          <p>
-            <a href="./source/Social Network De-anonymization with Communities.pdf"><strong>On Social Network De-anonymization with Communities: A Maximum A Posteriori Perspective</strong></a>
-            <br>
-            This work is advised by Prof. <a href="http://www.cs.sjtu.edu.cn/~fu-ly/index.html">Luoyi Fu</a> and <a href="http://www.cs.sjtu.edu.cn/~wang-xb/" target="_blank">Xinbing Wang</a>.
-            <br>
-            </p>
+        <div class="sep" aria-hidden="true"></div>
 
-            <p>
-              A crucial privacy-driven issue nowadays is reidentifying anonymized social networks by mapping them to correlated cross-domain auxiliary networks, and it is also denoted as de-anonymization problem. Although there are several prior works studying on one of the branches of this issue: seedless de-anonymization, they either theoretically derive cost functions without proposing algorithms or propose algorithms without sufficient theoretical rationales supporting the performance guarantee.
-            </p>
+        <!-- Publications last -->
+        <section id="publications" class="section">
+          <h2>Publications &amp; Manuscripts</h2>
+          <ul class="clean">
+            <li>
+              <h3>Struct‑Bench: A Benchmark for Differentially Private Structured Text Generation</h3>
+              <div class="pub-authors"><strong><em>Shuaiqi Wang</em></strong>, Vikas Raunak, Arturs Backurs, Victor Reis, Pei Zhou, Sihao Chen, Longqi Yang, Zinan Lin, Sergey Yekhanin, and Giulia Fanti. [<a href="https://wsqwsq.github.io/" target="_blank" rel="noopener">arXiv</a>] [<a href="https://github.com/struct-bench/structpe" target="_blank" rel="noopener">Code</a>] [<a href="https://struct-bench.github.io/" target="_blank" rel="noopener">Leaderboard</a>]</div>
+            </li>
+            <li>
+              <h3>Evaluating Selective Encryption Against Gradient Inversion Attacks</h3>
+              <div class="pub-authors">Jiajun Gu, Yuhang Yao, <strong><em>Shuaiqi Wang</em></strong>, and Carlee Joe‑Wong. [<a href="https://arxiv.org/abs/2508.04155" target="_blank" rel="noopener">arXiv</a>]</div>
+            </li>
+            <li>
+              <h3>Inferentially‑Private Private Information</h3>
+              <div class="pub-authors"><strong><em>Shuaiqi Wang</em></strong>, Shuran Zheng, Zinan Lin, Giulia Fanti, and Zhiwei Steven Wu. [<a href="https://arxiv.org/pdf/2410.17095" target="_blank" rel="noopener">WWW 2025</a>]</div>
+            </li>
+            <li>
+              <h3>MASAN: Enhancing Attack Stealth and Efficacy on Vision‑Language Models via Smart Noise</h3>
+              <div class="pub-authors"><strong><em>Shuaiqi Wang</em></strong>, Sayali Deshpande, Rajesh Kudupudi, Alireza Mehrtash, and Danial Sabri Dashti. [<a href="https://wsqwsq.github.io/" target="_blank" rel="noopener">ICLR 2025, BuildingTrust</a>]</div>
+            </li>
+            <li>
+              <h3>Statistic Maximal Leakage</h3>
+              <div class="pub-authors"><strong><em>Shuaiqi Wang</em></strong>, Zinan Lin, and Giulia Fanti. [<a href="https://arxiv.org/pdf/2411.18531" target="_blank" rel="noopener">ISIT 2024</a>]</div>
+            </li>
+            <li>
+              <h3>Guarding Multiple Secrets: Enhanced Summary Statistic Privacy for Data Sharing</h3>
+              <div class="pub-authors"><strong><em>Shuaiqi Wang</em></strong>, Rongzhe Wei, Mohsen Ghassemi, Eleonora Kreacic, and Vamsi K. Potluru. [<a href="https://arxiv.org/pdf/2405.13804" target="_blank" rel="noopener">ICLR 2024, PML</a>]</div>
+            </li>
+            <li>
+              <h3>Data Distribution Valuation</h3>
+              <div class="pub-authors">Xinyi Xu, <strong><em>Shuaiqi Wang</em></strong>, Chuan‑Sheng Foo, Bryan Kian Hsiang Low, and Giulia Fanti. [<a href="https://arxiv.org/pdf/2410.04386" target="_blank" rel="noopener">NeurIPS 2024</a>]</div>
+            </li>
+            <li>
+              <h3>Mixture‑of‑Linear‑Experts for Long‑term Time Series Forecasting</h3>
+              <div class="pub-authors">Ronghao Ni, Zinan Lin, <strong><em>Shuaiqi Wang</em></strong>, and Giulia Fanti. [<a href="https://arxiv.org/pdf/2312.06786" target="_blank" rel="noopener">AISTATS 2024</a>]</div>
+            </li>
+            <li>
+              <h3>Summary Statistic Privacy in Data Sharing</h3>
+              <div class="pub-authors"><strong><em>Shuaiqi Wang</em></strong>* , Zinan Lin*, Vyas Sekar, and Giulia Fanti. <em>*Equal contribution.</em> [<a href="https://arxiv.org/pdf/2303.02014" target="_blank" rel="noopener">JSAIT / NeurIPS 2022, S4ML</a>] [<a href="https://github.com/fjxmlzn/summary_statistic_privacy" target="_blank" rel="noopener">Code</a>]</div>
+            </li>
+            <li>
+              <h3>Towards a Defense against Backdoor Attacks in Continual Federated Learning</h3>
+              <div class="pub-authors"><strong><em>Shuaiqi Wang</em></strong>, Jonathan Hayase, Giulia Fanti, and Sewoong Oh. [<a href="https://arxiv.org/abs/2205.11736" target="_blank" rel="noopener">TMLR</a>] [<a href="https://github.com/wsqwsq/Towards-a-Defense-against-Backdoor-Attacks-in-Continual-Federated-Learning" target="_blank" rel="noopener">Code</a>]</div>
+            </li>
+            <li>
+              <h3>Efficient Distributed Steiner Tree Construction in Wireless Sensor Networks with Unreliable Links</h3>
+              <div class="pub-authors"><strong><em>Shuaiqi Wang</em></strong>, Shuhao Li, Luoyi Fu, and Xiaojun Lin. [<a href="./source/Efficient Distributed Steiner Tree Construction in Wireless Sensor Networks with Unreliable Links.pdf" target="_blank" rel="noopener">PDF</a>]</div>
+            </li>
+            <li>
+              <h3>De‑anonymizability of Social Network: Through the Lens of Symmetry</h3>
+              <div class="pub-authors">Benjie Miao, <strong><em>Shuaiqi Wang</em></strong>, Luoyi Fu, and Xiaojun Lin. [<a href="https://dl.acm.org/doi/pdf/10.1145/3397166.3409127" target="_blank" rel="noopener">MobiHoc 2020</a>]</div>
+            </li>
+            <li>
+              <h3>De‑anonymizing Social Networks with Overlapping Community Structure</h3>
+              <div class="pub-authors">Luoyi Fu, Jiapeng Zhang, <strong><em>Shuaiqi Wang</em></strong>, Xinyu Wu, Xinbing Wang, and Guihai Chen. [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8967164" target="_blank" rel="noopener">IEEE/ACM ToN</a>]</div>
+            </li>
+            <li>
+              <h3>Collective Influence Maximization in Mobile Social Networks</h3>
+              <div class="pub-authors">Xudong Wu, Luoyi Fu, <strong><em>Shuaiqi Wang</em></strong>, Bo Jiang, Xinbing Wang, and Guihai Chen. [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9465739" target="_blank" rel="noopener">IEEE TMC</a>]</div>
+            </li>
+          </ul>
+        </section>
 
-            <p>
-              To fill this gap, we first derived the cost functions as metrics to quantify the structural mismappings between networks based on Maximum A Posteriori estimation. Then we further our theoretical analysis by figuring out the conditions under which minimizing the cost function can perfectly recover the correct mapping. At last we designed algorithms for the ﬁrst time to approximately minimize the proposed MAP-based cost functions. 
-            </p>
+        <!-- Honors & Awards at end -->
+        <section id="awards" class="section">
+          <h2>Honors &amp; Awards</h2>
+          <ul class="clean">
+            <li>Carnegie Institute of Technology Dean’s Fellow, Carnegie Mellon University, 2021</li>
+            <li>Zhiyuan Distinguished Scholarship, Shanghai Jiao Tong University, 2020</li>
+            <li>Zhiyuan College Honors Scholarship, SJTU, 2017–2019</li>
+            <li>Academic Excellence Scholarship, SJTU, 2017–2019</li>
+            <li>First prize, Chinese University Student Computer Design Competition, 2019</li>
+          </ul>
+        </section>
 
-          <p></p>
-          </td>
-        </tr>
-        </tbody></table>
+        <footer>
+          <div>© <span id="year"></span> Shuaiqi Wang — Last updated <span id="updated"></span>.</div>
+        </footer>
+      </main>
+    </div>
+  </div>
 
-        <table width="100%" align="center" border="0" cellpadding="20">
-        <tbody><tr>
-          <td width="25%"><img src="./source/abstract.png" width="170" height="130"></td>
-          <td width="75%" valign="top">
-          <p>
-            <strong><a href="./source/De-anonymizability of Social Network Through the Lens of Symmetry.pdf">De-anonymizability of Social Network: Through the Lens of Symmetry</a>
-			</strong>
-            <br>
-            This work is advised by Prof. <a href="http://www.cs.sjtu.edu.cn/~fu-ly/index.html">Luoyi Fu</a>.
-            <br>
-            </p>
-
-            <p>            
-            Although social network de-anonymization has received intensive study in network science, it remains less understood how network structural features intrinsically affect whether or not the network can be successfully de-anonymized. To find this answer, we analyzed how the symmetry of graphs will affect the de-anonymizability without any network model assumption for the ﬁrst time. Then based on the analysis, we proposed a method to quantify the de-anonymizability of given networks based on concepts of automorphism and homomorphism in the abstract algebra. Finally, we designed an approximate algorithm to estimate de-anonymizability via sampling techniques.
-            </p>
-
-          <p></p>
-          </td>
-        </tr>
-        </tbody></table>
-
-        <table width="100%" align="center" border="0" cellpadding="20">
-        <tbody><tr>
-          <td width="25%"><img src="./source/overlap10.png" width="170" height="115"></td>
-          <td width="75%" valign="top">
-          <p>
-            <a href="./source/De-anonymizing Social Networks with Overlapping Community Structure.pdf"><strong>De-anonymizing Social Networks with Overlapping Community Structure</strong></a>
-            <br>
-            This work is advised by Prof. <a href="http://www.cs.sjtu.edu.cn/~fu-ly/index.html">Luoyi Fu</a> and <a href="http://www.cs.sjtu.edu.cn/~wang-xb/" target="_blank">Xinbing Wang</a>.
-            </p>
-
-            <p>
-            Although the seedless de-anonymization problem have been explored by several previous works through various of network models, all those models cannot preciously capture the real social networks. Motivated by this, we adopt a more practical social network model parameterized by overlapping communities, which can serve as side information for de-anonymization. In this work, we derived the cost function of expected number of mismapped users based on Minimum Mean Square Error for the ﬁrst time. After simplilfying the cost function by transforming it into a weighted-edge matching problem, we ﬁgured out the approximation ratio and proposed an approximate algorithm via convex-concave optimization method. 
-            </p>
-          <p></p>
-          </td>
-        </tr>
-        </tbody></table>
-      -->
-
-        
-        
-
-        <!-- Teaching -->
-        <!--
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>Teaching</heading>
-            <p>
-              Teaching Assistant for COMP 411/511,
-              <a href="https://www.cs.rice.edu/~javaplt/411/19-spring/">Principles of Programming Languages (Spring 2019)</a>,
-              Rice University
-              <br>
-
-              Teaching Assistant for CS 334,
-              Computer Organization Lab (Spring 2016),
-              Shanghai Jiao Tong University
-              <br>
-
-              Teaching Assistant for CS 499,
-              <a href="http://basics.sjtu.edu.cn/~dominik/teaching/2017-cs499/index.html">Mathematical Foundations of Computer Science (Spring 2017)</a>,
-              Shanghai Jiao Tong University
-              <br>
-            </p>
-          </td>
-        </tr>
-        </tbody></table>
-    	-->
-
-
-        <!-- Scholarships -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>Honors and Awards</heading>
-            <p>
-              <strong>Carnegie Institute of Technology Dean's Fellow</strong>, Carnegie Mellon University, 2021
-            </p>
-            <p>
-              <strong>Zhiyuan Distinguish Scholarship</strong>, Shanghai Jiao Tong University, 2020
-            </p>
-            <p>
-              <strong>Zhiyuan College Honors Scholarship</strong>, Shanghai Jiao Tong University, 2017 - 2019
-            </p>
-            <p>
-              <strong>Academic Excellence Scholarship</strong>, Shanghai Jiao Tong University, 2017 - 2019
-            </p>
-            <p>
-              <strong>The first price</strong>, Chinese University Student Computer Design Competition, 2019
-            </p>
-          </td>
-        </tr>
-        </tbody></table>
-
-        <!-- Awards -->
-        <!--
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>Awards</heading>
-            <p>
-              <strong>Junzheng Scholar</strong>, Shanghai Jiao Tong University, 2017
-            </p>
-            <p>
-              <strong>Merit Student of Shanghai Jiao Tong University</strong>, Shanghai Jiao Tong University, 2015
-            </p>
-          </td>
-        </tr>
-        </tbody></table>
-    	-->
-
-
-        <!-- More about Me -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody><tr>
-          <td width="100%" valign="middle">
-            <heading>More About Me</heading>
-            <!--<p>
-              Besides computer science, I am also crazy about math. I have taken or audited plenty of courses held by mathematic department, such as abstract algebra and stochastic process. Moreover, I held a seminar discussing difficult problems in mathematical analysis with a group of talented people when I was a freshman.
-            </p>-->
-            <p>
-              Fascinated by the free thought and infinite possibilities, I enjoy exploring the literary world. 
-              My favorite writters are Jorge Luis Borges and Albert Camus.
-            </p>
-          </td>
-        </tr>
-        </tbody></table>
-
-
-      </td>
-      </tr>
-    </tbody></table>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-93472850-1', 'auto');
-  ga('send', 'pageview');
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('updated').textContent = new Date().toLocaleDateString(undefined, {year:'numeric', month:'short'});
+  
+  // Move the bracketed links (e.g., [arXiv]) onto a separate line for each publication
+  document.querySelectorAll('.pub-authors').forEach(function(el){
+    // Replace the first space-before-[ with a line break. Keeps all subsequent links on same second line.
+    el.innerHTML = el.innerHTML.replace(/\s\[/, '<br>[');
+  });
 </script>
-
-
-<div align="center">
-<a href="https://clustrmaps.com/site/1axd9"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=zIYxO-RPwZrfEBJNObfXjUR1E7xTvkeI0hn47T9w82M&cl=ffffff" /></a></div>
-
-
-</body></html>
+</body>
+</html>
